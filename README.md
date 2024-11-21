@@ -1,5 +1,7 @@
 # Blocky-RPG-Concept
-An interactive drawing inspired by the role-playing game genre. There will be a small square character that follows the mouse, and an NPC character that will act as a button. When interacted with the NPC will produce a speech bubble with text in it. The background will be nature themed, and there will be trees added to some areas of the drawing. There will also be a small enemy towards the middle of the screen who will move based on a loop.  	
+An interactive drawing inspired by the role-playing game genre. There will be a small square character that follows the mouse, and an NPC character that will act as a button. When interacted with the NPC will produce a speech bubble with text in it. The background will be nature themed, and there will be trees added to some areas of the drawing. There will also be a small enemy towards the middle of the screen who will move based on a loop.
+
+credit for the drawing used for the background: Jolticute (aka me :D)
 
 ### List of Concepts to include
 1. Background – use the import and display image for it 
