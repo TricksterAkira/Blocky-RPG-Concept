@@ -1,7 +1,7 @@
 let sky;
 
 function preload(){
-  sky = loadImage('./assets/voltron redraw.png')
+  sky = loadImage('./voltron redraw.png')
 }
 
 function setup() {
