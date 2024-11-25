@@ -24,4 +24,14 @@ function draw() {
   stroke(202,34,7,.60);
   fill(50,91,55);
   rect(645,85,10,25);
+  //button reference
+  //rect(540,135,60,50);
+  //button
+  if(keyIsDown(70)===true && mouseX>=540 && mouseX<=600 && mouseY>=135 && mouseY<=185){
+    fill(100);
+    noStroke();
+    textSize(15);
+    textFont("Comic Sans MS");
+    text("Way to complete the interact tutorial! :D",685,100,100,300);
+    }
 }
