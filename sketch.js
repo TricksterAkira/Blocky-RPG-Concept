@@ -1,9 +1,9 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 400);
+  print("Hold 'F' to interact");
 }
 
 function draw() {
-  background(220);
   //NPC
   line(640,168,640,183);
   line(660,168,660,183);
