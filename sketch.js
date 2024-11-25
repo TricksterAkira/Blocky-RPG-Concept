@@ -1,5 +1,5 @@
 let sky;
-
+let wormX=350;
 function preload(){
   sky = loadImage('./voltron redraw.png')
 }
@@ -85,4 +85,9 @@ function draw() {
     textFont("Comic Sans MS");
     text("Way to complete the interact tutorial! :D",685,100,100,300);
     }
+  //worm
+  stroke(3,45,20);
+  fill(3,65,58);
+  rect(wormX,340,40,20);
+  wormX = frameCount % width;
 }
