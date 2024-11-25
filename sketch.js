@@ -1,9 +1,17 @@
+let sky;
+
+function preload(){
+  sky = loadImage('./voltron redraw.png')
+}
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 400);
 }
 
 function draw() {
   background(220);
+  image(sky,-550,0);
+  stroke(202,34,7,.60);
   //middle ground 1
   fill(31,25,37);
   rect(235,270,750,100);
