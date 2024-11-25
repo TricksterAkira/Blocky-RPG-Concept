@@ -5,7 +5,9 @@ function setup() {
 }
 
 function draw() {
+  //background
   background(10);
+  //weapon
   stroke(56);
   line(mouseX+28,mouseY+23,mouseX+34,mouseY+7);
   fill(87);
@@ -16,6 +18,7 @@ function draw() {
   vertex(mouseX+41,mouseY+10);
   vertex(mouseX+34,mouseY+7);
   endShape();
+  //Player character
   stroke(183,87,24);
   strokeWeight(3);
   line(mouseX-10,mouseY+18,mouseX-10,mouseY+33);
