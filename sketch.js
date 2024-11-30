@@ -1,14 +1,15 @@
 let sky;
-
+let wormX=350;
 function preload(){
   sky = loadImage('./voltron redraw.png')
 }
-
 function setup() {
   colorMode(HSL);
   frameRate(60);
   createCanvas(800, 400);
   print("Hold 'F' to interact");
+  let treeArray = [];
+  let treePic = drawTree(treeArray);
 }
 
 function draw() {
@@ -31,6 +32,10 @@ function draw() {
   rect(0,360,800,50);
   fill(91,52,32);
   rect(0,360,800,30);
+  //trees
+  push();
+  drawTree();
+  pop();
   //weapon
   stroke(56);
   line(mouseX+28,mouseY+23,mouseX+34,mouseY+7);
@@ -85,4 +90,30 @@ function draw() {
     textFont("Comic Sans MS");
     text("Way to complete the interact tutorial! :D",685,100,100,300);
     }
+  //worm
+  stroke(3,45,20);
+  fill(3,65,58);
+  rect(wormX,340,40,20);
+  wormX = frameCount % width;
+}
+
+function drawTree(trees){
+  trees = [15,0,40,50,400];
+  noStroke();
+  fill(10);
+  push();
+  setCenter(50,300);
+  polarPolygon(trees[0],trees[1],trees[2],trees[3]);
+  pop();
+  push();
+  setCenter(20,300);
+  polarPolygon(trees[0],trees[1],trees[2],sqrt(trees[4]));
+  pop();
+  push();
+  setCenter(85,300);
+  polarPolygon(trees[0],trees[1],trees[2],sqrt(trees[4]));
+  pop();
+  translate(42,300);
+  rect(0,0,20,60);
+  return trees;
 }
