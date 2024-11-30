@@ -100,7 +100,12 @@ function draw() {
 function drawTree(trees){
   trees = [15,0,40,50,400];
   noStroke();
-  fill(10);
+  push();
+  fill(22,41,23);
+  translate(42,300);
+  rect(0,0,20,60);
+  pop();
+  fill(118,40,23);
   push();
   setCenter(50,300);
   polarPolygon(trees[0],trees[1],trees[2],trees[3]);
@@ -113,7 +118,5 @@ function drawTree(trees){
   setCenter(85,300);
   polarPolygon(trees[0],trees[1],trees[2],sqrt(trees[4]));
   pop();
-  translate(42,300);
-  rect(0,0,20,60);
   return trees;
 }
