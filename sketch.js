@@ -33,9 +33,7 @@ function draw() {
   fill(91,52,32);
   rect(0,360,800,30);
   //trees
-  push();
   drawTree();
-  pop();
   //weapon
   stroke(56);
   line(mouseX+28,mouseY+23,mouseX+34,mouseY+7);
