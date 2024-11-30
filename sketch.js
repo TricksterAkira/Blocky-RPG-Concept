@@ -1,8 +1,10 @@
 let sky;
 let wormX=350;
+
 function preload(){
   sky = loadImage('./voltron redraw.png')
 }
+
 function setup() {
   colorMode(HSL);
   frameRate(60);
