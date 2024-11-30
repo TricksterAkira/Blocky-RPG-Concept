@@ -33,7 +33,18 @@ function draw() {
   fill(91,52,32);
   rect(0,360,800,30);
   //trees
+  push();
+  translate(0,-90);
+  scale(1.25);
   drawTree();
+  pop();
+  push();
+  for(let i = 0;i<2;i++){
+    translate(330,-110);
+    scale(1.1);
+    drawTree();
+  }
+  pop();
   //weapon
   stroke(56);
   line(mouseX+28,mouseY+23,mouseX+34,mouseY+7);
